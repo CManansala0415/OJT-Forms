@@ -22,7 +22,8 @@
     .content-div{
         background-color: #ffffff;
         height: auto;
-        width:auto;
+        max-width: 800px;
+        min-width: 800px;
         border-radius: 10px;
         box-shadow: -5px 8px 10px #888888;
     }
@@ -78,7 +79,7 @@
     }
     p1{
         text-align: left;
-        font-size: 13.5px;
+        font-size: 12px;
         color: black;
     }
 
@@ -100,14 +101,7 @@
             margin-left: 20px;
             margin-right: 20px;
     }
-    .signature {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    padding: 0 40px;
-    }
-
+    
     pre{
         font-family: Arial, sans-serif;
         font-size: 14px;
@@ -120,12 +114,23 @@
     }
     p2{
         text-align: center;
-        padding-left: 20%;
+        padding-left: 8%;
     }
     p3{
         text-align: center;
-        padding-left: 35%;
+        padding-left: 20%;
     }
+
+    input[type="text"] {
+            border: none;
+            border-bottom: 1px solid black;
+            padding: 5px;
+            outline: none;
+        }
+
+        input[type="text"]:focus {
+            border-bottom: 1px solid blue;
+        }
 </style>
 <body>
     <div class="container">
@@ -153,58 +158,80 @@
 
             <br>
             <div class = "form-container">
+                <p1>Course: <input type="text" name="course" size="33">  
+                    Date to Graduate: <input type="text" name="dtg" size="15">  
+                    I.D. Number: <input type="text" name="idno" size="8"></p1>
                 <br>
-                <p1>Course:____________________________  Date to Graduate:__________  I.D. Number: ________________</p1>
+
+                <p1>Name: <input type="text" name="name" size="50">  
+                    Nationality: <input type="text" name="nat" size="10">  
+                    Sex: <input type="text" name="sex" size="8"></p1>
                 <br>
+
+                <p1>Permanent Address: <input type="text" name="padd" size="83"> </p1>
                 <br>
-                <p1>Name:________________________________________ Nationality:__________________ Sex:_________</p1>
+
+                <p1>High School: <input type="text" name="hs" size="65">  
+                    S.Y.: <input type="text" name="sy" size="14"> </p1>
                 <br>
+
+                <p1>High School Address: <input type="text" name="hsadd" size="82"> </p1>
                 <br>
-                <p1>Permanent Address:______________________________________________________________________</p1>
+
+                <p1>Date of Birth: <input type="text" name="dob" size="26">  
+                    Place of Birth: <input type="text" name="pob" size="45"> </p1>
                 <br>
+
+                <p1>Other Schools Attended if Any: <input type="text" name="osa" size="44">  
+                    Course Taken: <input type="text" name="ct" size="14"> </p1>
                 <br>
-                <p1>High School:___________________________________________________ S.Y.:_____________________</p1>
-                <br>
-                <br>
-                <p1>High School Address:_____________________________________________________________________</p1>
-                <br>
-                <br>
-                <p1>Date of Birth:_______________________________ Place of Birth:_________________________________</p1>
-                <br>
-                <br>
-                <p1>Other Schools Attended if any:__________________________________ Course Taken:________________</p1>
-                <br>
-                <br>
-                <p1>S.Y.________________ Address:___________________________________________________________</p1>
+
+                <p1>S.Y.: <input type="text" name="osy" size="17">  
+                    Address: <input type="text" name="sy" size="65"> </p1>
                 <br>
                 <br>
             
                 <table class="subjects-table">
-                    <p2><b>SUBJECT</b></p2>
+                    <p2><b>SUBJECTS CURRENTLY ENROLLED</b></p2>
                     <p3><b>INSTRUCTOR</b></p3>
                 </table>
-
-                <p1>1.______________________________________           ______________________________________________</p1>
-                <p1>2.______________________________________           ______________________________________________</p1>
-                <p1>3.______________________________________           ______________________________________________</p1>
-                <p1>4.______________________________________           ______________________________________________</p1>
-                <p1>5.______________________________________           ______________________________________________</p1>
-                <p1>6.______________________________________           ______________________________________________</p1>
-                <p1>7.______________________________________           ______________________________________________</p1>
-                <p1>8.______________________________________           ______________________________________________</p1>
-                <p1>9.______________________________________           ______________________________________________</p1>
-                <p1>10._____________________________________           ______________________________________________</p1>
-                <p1>11._____________________________________           ______________________________________________</p1>
-                <p1>12._____________________________________           ______________________________________________</p1>
-            
+                <br>
+                <p1>1.<input type="text" name="sce1" size="46">   <input type="text" name="i1" size="46"></p1>
+                <br>
+                <p1>2.<input type="text" name="sce2" size="46">   <input type="text" name="i2" size="46"></p1>
+                <br>
+                <p1>3.<input type="text" name="sce3" size="46">   <input type="text" name="i3" size="46"></p1>
+                <br>
+                <p1>4.<input type="text" name="sce4" size="46">   <input type="text" name="i4" size="46"></p1>
+                <br>
+                <p1>5.<input type="text" name="sce5" size="46">   <input type="text" name="i5" size="46"></p1>
+                <br>
+                <p1>6.<input type="text" name="sce6" size="46">   <input type="text" name="i6" size="46"></p1>
+                <br>
+                <p1>7.<input type="text" name="sce7" size="46">   <input type="text" name="i7" size="46"></p1>
+                <br>
+                <p1>8.<input type="text" name="sce8" size="46">   <input type="text" name="i8" size="46"></p1>
+                <br>
+                <p1>9.<input type="text" name="sce9" size="46">   <input type="text" name="i9" size="46"></p1>
+                <br>
+                <p1>10.<input type="text" name="sce10" size="45">   <input type="text" name="i10" size="46"></p1>
+                <br>
+                <p1>11.<input type="text" name="sce11" size="45">   <input type="text" name="i11" size="46"></p1>
+                <br>
+                <p1>12.<input type="text" name="sce12" size="45">   <input type="text" name="i12" size="46"></p1>
+                <br>
             <br>
             <h4>DO NOT FILL THIS PORTION - TO BE FILLED UP BY THE REGISTRAR</h4>
             <h4>DEFIENCIES INDICATED</h4>
-            <p1>1.____________________________________________________________________________________</p1>
-            <p1>2.____________________________________________________________________________________</p1>
-            <p1>3.____________________________________________________________________________________</p1>
-            <p1>4.____________________________________________________________________________________</p1>
-            <p1>5.____________________________________________________________________________________</p1>
+            <p1>1.<input type="text" name="di1" size="98"></p1>
+            <br>
+            <p1>2.<input type="text" name="di2" size="98"></p1>
+            <br>
+            <p1>3.<input type="text" name="di3" size="98"></p1>
+            <br>
+            <p1>4.<input type="text" name="di4" size="98"></p1>
+            <br>
+            <p1>5.<input type="text" name="di5" size="98"></p1>
             <br>
             <br>
         </div>
@@ -212,18 +239,15 @@
         <br>
         <br>
         <pre>
-                                                                       Recommended by:
+                                                                                   Recommended by:
                 
-                    _____________________________                  _____________________________
-                                  Student's Signature                                              Dean/Dept.Head
+                            _____________________________                          _____________________________
+                                          Student's Signature                                                          Dean/Dept.Head
 
 
-            Evaluated by: _____________________         Approved by: ________________________
-                                            Registrar                               VP for Academic Affairs/ Academic Office 
-
-
+                    Evaluated by: _____________________                   Approved by: ________________________
+                                                    Registrar                                           VP for Academic Affairs/ Academic Office 
         </pre>
-        
             <br>
             <br>
 
@@ -231,9 +255,7 @@
 
             <br>
             <br>
-        </div>
-        
+        </div> 
     </div>
-    
 </body>
 </html>
